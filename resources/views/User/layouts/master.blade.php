@@ -55,7 +55,7 @@
                                 <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
                             </a> --}}
                             <div class="dropdown d-inline mr-5">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="btn btn-secondary dropdown-toggle rounded" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-user mr-1"></i>{{ Auth::user()->name }}
                                 </a>
                                 @if(Auth::user()->image == null)
@@ -71,7 +71,7 @@
                                     <span class="my-3">
                                         <form action="{{ route('logout') }}" method="post" class="dropdown-item">
                                             @csrf
-                                            <button class="btn btn-dark" type="submit"><i class="fa-solid fa-right-from-bracket mr-1"></i>Logout</button>
+                                            <button class="btn btn-dark col rounded" type="submit"><i class="fa-solid fa-right-from-bracket mr-1"></i>Logout</button>
                                         </form>
                                     </span>
                                   </li>
