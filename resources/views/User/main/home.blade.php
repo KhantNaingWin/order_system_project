@@ -122,7 +122,7 @@
         if ($sortingOption == 'asc') {
             $.ajax({
                     type: 'get',
-                    url: 'http://localhost:8000/user/ajax/pizzalist',
+                    url: '/user/ajax/pizzalist',
                     data: {'status':'asc'},
                     dataType: 'json',
                     success: function(response){
@@ -162,7 +162,7 @@
         } else if($sortingOption == 'desc'){
             $.ajax({
                     type: 'get',
-                    url: 'http://localhost:8000/user/ajax/pizzalist',
+                    url: '/user/ajax/pizzalist',
                     data: {'status':'desc'},
                     dataType: 'json',
                     success: function(response){

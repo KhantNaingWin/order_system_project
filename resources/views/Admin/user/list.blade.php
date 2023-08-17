@@ -96,7 +96,7 @@
             }
             $.ajax({
                 type:'get',
-                url: 'http://localhost:8000/user/change/role',
+                url: '/user/change/role',
                 data: $data,
                 dataType: 'json',
                 success: function(response){

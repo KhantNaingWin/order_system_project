@@ -94,12 +94,12 @@
                });
                $.ajax({
                 type : 'get',
-                url  : 'http://localhost:8000/user/ajax/order',
+                url  : '/user/ajax/order',
                 data: Object.assign({},$orderList),
                 dataType: 'json',
                 success: function(response){
                     if (response.status == 'true') {
-                        window.location.replace("http://localhost:8000/user/homePage");
+                        window.location.replace("/user/homePage");
                     }
                 }
             });

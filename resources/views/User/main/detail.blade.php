@@ -109,7 +109,7 @@
 
             $.ajax({
                 type : 'get',
-                url  : 'http://localhost:8000/user/ajax/increase/viewcount',
+                url  : '/user/ajax/increase/viewcount',
                 data: {
                     'productId': $('#pizzaID').val()
                 },
@@ -130,12 +130,12 @@
             // console.log($source);
             $.ajax({
                 type : 'get',
-                url  : 'http://localhost:8000/user/ajax/addToCart',
+                url  : '/user/ajax/addToCart',
                 data: $source,
                 dataType: 'json',
                 success: function(response){
                     if (response.status = 'status') {
-                        window.location.replace("http://localhost:8000/user/homePage");
+                        window.location.replace("/user/homePage");
                     }
                 }
             });
