@@ -16,15 +16,18 @@
     <link href="{{ asset('Admin/css/font-face.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('Admin/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('Admin/vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('Admin/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet"
+        media="all">
 
     {{--  <!-- Bootstrap CSS-->  --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="{{ asset('Admin/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
 
     {{--  <!-- Vendor CSS-->  --}}
     <link href="{{ asset('Admin/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('Admin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet"
+        media="all">
     <link href="{{ asset('Admin/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('Admin/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
     <link href="{{ asset('Admin/vendor/slick/slick.css') }}" rel="stylesheet" media="all">
@@ -34,7 +37,9 @@
     {{--  <!-- Main CSS-->  --}}
     <link href="{{ asset('Admin/css/theme.css') }}" rel="stylesheet" media="all">
     {{--  fontawesome link  --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -127,10 +132,10 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            @if (Auth::user()->image ==null)
+                                            @if (Auth::user()->image == null)
                                                 <img src="{{ asset('image/user_image.webp') }}">
                                             @else
-                                              <img src="{{ asset('storage/'.Auth::user()->image) }}"/>
+                                                <img src="{{ asset('storage/' . Auth::user()->image) }}" />
                                             @endif
                                         </div>
                                         <div class="content">
@@ -140,10 +145,10 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        @if (Auth::user()->image ==null)
+                                                        @if (Auth::user()->image == null)
                                                             <img src="{{ asset('image/user_image.webp') }}">
                                                         @else
-                                                            <img src="{{ asset('storage/'.Auth::user()->image) }}"/>
+                                                            <img src="{{ asset('storage/' . Auth::user()->image) }}" />
                                                         @endif
                                                     </a>
                                                 </div>
@@ -169,9 +174,11 @@
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <form action="{{ route('logout') }}" method="POST" class="d-flex justify-content-center my-3">
+                                                <form action="{{ route('logout') }}" method="POST"
+                                                    class="d-flex justify-content-center my-3">
                                                     @csrf
-                                                    <button class="btn btn-dark text-white col-10" type="submit"><i class="zmdi zmdi-power mr-2"></i>Logout</button>
+                                                    <button class="btn btn-dark text-white col-10" type="submit"><i
+                                                            class="zmdi zmdi-power mr-2"></i>Logout</button>
                                                 </form>
                                             </div>
                                         </div>
@@ -192,26 +199,26 @@
 
     {{--  <!-- Jquery JS-->  --}}
     {{-- <script src="{{ asset('Admin/vendor/jquery-3.2.1.min.js') }}"></script> --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     {{--  <!-- Bootstrap JS-->  --}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
     <script src="{{ asset('Admin/vendor/bootstrap-4.1/popper.min.js') }}"></script>
     <script src="{{ asset('Admin/vendor/bootstrap-4.1/bootstrap.min.js') }}"></script>
     {{--  <!-- Vendor JS -->  --}}
-    <script src="{{ asset('Admin/vendor/slick/slick.min.js') }}">
-    </script>
+    <script src="{{ asset('Admin/vendor/slick/slick.min.js') }}"></script>
     <script src="{{ asset('Admin/vendor/wow/wow.min.js') }}"></script>
     <script src="{{ asset('Admin/vendor/animsition/animsition.min.js') }}"></script>
-    <script src="{{ asset('Admin/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js') }}">
-    </script>
+    <script src="{{ asset('Admin/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js') }}"></script>
     <script src="{{ asset('Admin/vendor/counter-up/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('Admin/vendor/counter-up/jquery.counterup.min.js') }}">
-    </script>
+    <script src="{{ asset('Admin/vendor/counter-up/jquery.counterup.min.js') }}"></script>
     <script src="{{ asset('Admin/vendor/circle-progress/circle-progress.min.js') }}"></script>
     <script src="{{ asset('Admin/vendor/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
     <script src="{{ asset('Admin/vendor/chartjs/Chart.bundle.min.js') }}"></script>
-    <script src="{{ asset('Admin/vendor/select2/select2.min.js') }}">
-    </script>
+    <script src="{{ asset('Admin/vendor/select2/select2.min.js') }}"></script>
 
     {{--  <!-- Main JS-->  --}}
     <script src="{{ asset('Admin/js/main.js') }}"></script>
